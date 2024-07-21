@@ -5,37 +5,81 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+nav {
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #646cff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav a:hover {
+  color: #535bf2;
 }
 
-.card {
-  padding: 2em;
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+.book-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.book-item img {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.book-item p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.quotes-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.quotes-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quotes-container li {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+  position: relative;
+}
+
+.quotes-container li::before {
+  content: "“";
+  font-size: 2rem;
+  color: #646cff;
+  position: absolute;
+  left: -25px;
+  top: -10px;
+}
+
+.quotes-container li::after {
+  content: "”";
+  font-size: 2rem;
+  color: #646cff;
+  position: absolute;
+  right: -25px;
+  bottom: -10px;
 }
